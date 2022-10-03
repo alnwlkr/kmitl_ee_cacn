@@ -3,7 +3,6 @@ def encode(str1):
     n = len(str1)
     result = ''
     i = 0
-    is_same = 1
     cnt = 0
     while i <= n:
         if (i == 0):
