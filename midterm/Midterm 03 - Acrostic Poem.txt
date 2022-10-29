@@ -1,0 +1,22 @@
+พอดีผมไปหาในกูเกิ้ล ไปเจอสิ่งที่เรียกว่า Acrostic Poem มา
+ความน่าสนใจของมันก็คือถ้าเราข้อความ/ประโยคมา 1 ย่อหน้า ตัวอักษรตัวแรกของแต่ละบรรทัดในย่อหน้านั้น จะสามารถอ่านเป็นคำที่ซ่อนอยู่ได้
+จากตัวอย่าง ก็จะได้คำว่า "RAINSTORM" ออกมา
+จงเขียนโปรแกรมรับข้อความมาจนกว่าจะเจอคำว่า "~END~" จากนั้นให้แสดงคำที่อยู่ด้านหน้าสุดออกมา
+input
+n + 1 บรรทัด
+บรรทัดที่ 1 ถึง n: ประโยค
+บรรทัดที่ n: ข้อความ ~END~
+output
+ข้อความจากตัวอักษรหน้าสุด ของแต่ละบรรทัด
+    Sample Input
+It's my favourite food
+Cold as the inside of a fridge
+Every sunny day
+Can't wait
+Running to the van
+Empty out the money
+Any sauce on that, love?
+Mmmmmm, yummy!
+~END~
+    Sample Output
+ICECREAM

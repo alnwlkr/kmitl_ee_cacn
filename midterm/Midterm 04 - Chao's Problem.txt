@@ -1,0 +1,95 @@
+Midterm 04 - Chao's Problem.py
+เชาว์มีปัญหาด้านการนอนหลับในเวลากลางคืน เขาจึงพยายามใช้วิธีนับแกะ เพื่อช่วยให้นอนหลับง่ายยิ่งขึ้น แต่เขาก็จะเจอปัญหาบางอย่างเมื่อใช้วิธีนี้ และเขากำลังหาวิธีแก้มันอยู่
+โดยเขาได้ตั้งทฤษฎี ชื่อว่า "ทฤษฎีของเชาว์" เพื่อใช้สำหรับแก้ปัญหานี้
+ทฤษฎีของเชาว์
+เชาว์จะมีปัญหานอนไม่หลับ เมื่อใช้วิธีนับแกะแล้วเจอกับเงื่อนไขเหล่านี้จากการจดบันทึกของเชาว์
+1) หากเชาว์เจอแกะดำเป็นตัวที่ 13 หารลงตัว เชาว์จะนอนในคืนนั้นไม่หลับ ยกเว้นถ้าแกะตัวที่ 15 เป็นแกะดำ
+2) หากเชาว์เจอแกะขาวเป็นตัวที่ 17 หารลงตัว เชาว์จะนอนหลับทันที โดยไม่มีข้อยกเว้น
+3) หากเชาว์เจอแกะเป็นสีเทาเป็นตัวที่ลำดับเลขคู่ เชาว์จะเริ่มง่วง แล้วจะหลับทันทีเมื่อแกะตัวต่อไปเป็นสีขาว
+4) นอกเหนือจากนี้ เชาว์จะนอนหลับฝันดี
+เมื่อฟังปัญหาของเชาว์แล้ว อยากให้คุณช่วยเขียนโปรแกรมจำลองทฤษฎีของเชาว์ให้หน่อย
+โดยรับ Input เป็นสีแกะตามลำดับของแกะจนกว่าาจะเจอคำว่า "~END~" และแสดงผลว่า เชาว์นอนหลับในคืนนั้นหรือไม่
+INPUT SPECIFICATION	
+n + 1 บรรทัด *โดย n มากกว่า 15 แน่นอน
+บรรทัดที่ 1 ถึง n: สีของแกะแต่ละตัวได้แก้ (white, black, gray)
+บรรทัดที่ n: ข้อความ ~END~
+OUTPUT SPECIFICATION
+True เมื่อเชาว์นอนหลับในคืนนั้น
+False เมื่อเชาว์นอนไม่หลับ
+    SAMPLE INPUT
+white
+white
+white
+white
+gray
+black
+white
+~END~
+    SAMPLE OUTPUT
+True
+
+    SAMPLE INPUT
+white
+white
+white
+white
+gray
+black
+white
+white
+white
+white
+white
+white
+white
+white
+white
+white
+gray
+white
+white
+white
+white
+white
+white
+white
+white
+black
+gray
+white
+~END~
+    SAMPLE OUTPUT
+False
+
+    SAMPLE INPUT
+white
+white
+white
+white
+gray
+black
+white
+white
+white
+white
+white
+white
+white
+white
+black
+white
+gray
+white
+white
+white
+white
+white
+white
+white
+white
+black
+gray
+white
+~END~
+    SAMPLE OUTPUT
+True
