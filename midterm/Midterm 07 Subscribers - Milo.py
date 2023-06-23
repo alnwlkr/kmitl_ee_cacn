@@ -12,7 +12,7 @@ def delsuf(slst):
     slst[1] = int(slst[1])
     slst.pop(2)
    else:
-    slst[1] = float(slst[1])
+    slst[1] = int(slst[1])
    return slst
 
 
@@ -31,7 +31,7 @@ for i in range(len(lst)):
     lst[i] = delsuf(lst[i])
 # sort ตรงนี้ยังมีบัค
 # print(*lst, sep='\n')
-lst.sort(key = lambda x:(-1 * x[1],len(x[0]), x[0].lower()))
+lst.sort(key = lambda x:(-1 * x[1], -len(x[0]), x[0].lower()))
 
 for i in range(len(lst)):
     print(*lst[i], sep=' ')
