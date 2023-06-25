@@ -26,11 +26,9 @@ while (True):
 for i in range(len(lst)):
     lst[i] = lst[i].split()
 
-# print(*lst, sep='\n')
 for i in range(len(lst)):
     lst[i] = delsuf(lst[i])
-# sort ตรงนี้ยังมีบัค
-# print(*lst, sep='\n')
+
 lst.sort(key = lambda x:(-1 * x[1], -len(x[0]), x[0].lower()))
 
 for i in range(len(lst)):
